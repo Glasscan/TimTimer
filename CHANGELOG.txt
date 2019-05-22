@@ -1,0 +1,37 @@
+May 21 2019
+Two files: Timer.py and Pause.py
+
+-- Timer.py --
+Creates a timer which accepts 3 kinds of input:
+- seconds (default)
+- minutes
+- minutes and seconds
+
+Timer will not accept any other input.
+
+Example:
+- 300s (or simply 300)
+- 20m
+- 30m 50s
+
+The get_duration() method converts minutes into seconds for convenience sake.
+
+Currently there is no way to choose the (default) alarm file. So what is
+currently there is a hardcoded path for my own use.
+
+I pulled the "siren" wavefile from freesound.org which then needed to be
+converted to a .mp3 file via https://online-audio-converter.com/. Probably, did
+not need to do that since I'm opening the file with os.system("")
+
+
+-- Pause.py --
+There is no built-in way to pause a [Timer] thread so the way that we pause
+here is by noting the elapsed time, killing the current thread, and creating a
+new one with the remaining time when the user wants to unpause.
+
+Naturally, you can't pause after the time has run out; instead the script
+will exit if you try.
+
+
+May 22 2019
+Fixed some bugs with the inputs during pausing.
