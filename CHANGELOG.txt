@@ -35,3 +35,27 @@ will exit if you try.
 
 May 22 2019
 Fixed some bugs with the inputs during pausing.
+
+
+May 28 2019
+
+Did the obvious and changed the path to the siren-alarm.mp3 file to be local.
+
+
+-- Timer.py --
+Updated to support changing the default alarm file. The alarm  use is what is
+written on the first line of DEFAULT.txt
+
+
+-- setDefault.py --
+
+Uses the tkinter module to select a new default .mp3 for the alarm.
+Takes the chosen file and overwrites the current DEFAULT.txt with the new file
+path.
+
+Using this opens a ptyhonw.exe which I don't know what to do about.
+
+
+-- DEFAULT.txt --
+
+Single line with the path to the current "alarm".mp3.
