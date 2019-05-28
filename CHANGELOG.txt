@@ -32,10 +32,12 @@ new one with the remaining time when the user wants to unpause.
 Naturally, you can't pause after the time has run out; instead the script
 will exit if you try.
 
+------------------------------------------------------------------------------
 
 May 22 2019
 Fixed some bugs with the inputs during pausing.
 
+------------------------------------------------------------------------------
 
 May 28 2019
 
